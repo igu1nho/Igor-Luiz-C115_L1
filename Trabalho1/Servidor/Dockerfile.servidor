@@ -1,0 +1,8 @@
+FROM python:3.8
+
+WORKDIR /TRABALHO1
+
+COPY servidor.py /TRABALHO1/Servidor/servidor.py
+
+# Comando para executar o servidor
+CMD ["python", "/TRABALHO1/Servidor/servidor.py"]

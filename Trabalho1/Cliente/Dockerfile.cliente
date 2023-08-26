@@ -1,0 +1,8 @@
+FROM python:3.8
+
+WORKDIR /TRABALHO1
+
+COPY cliente.py /TRABALHO1/Cliente/cliente.py
+
+# Comando para executar o cliente
+CMD ["python", "/TRABALHO1/Cliente/cliente.py"]
