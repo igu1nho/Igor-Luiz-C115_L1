@@ -43,4 +43,14 @@ h2: iperf -c 10.0.0.1 -p 5555 -i 1 -t 15
 
 sudo mn --custom Downloads/mininet_topo.py --topo mytopo --controller=none --mac
 
+sudo ovs-ofct1 add-flow s1 action=normal
+sudo ovs-ofct1 add-flow s2 action=normal
+sudo ovs-ofct1 add-flow s3 action=normal
+sudo ovs-ofct1 add-flow s4 action=normal
 
+pingall
+
+sudo ovs-ofct1 del-flow s1
+sudo ovs-ofct1 del-flow s2
+sudo ovs-ofct1 del-flow s3
+sudo ovs-ofct1 del-flow s4
