@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 
 // Configurações do Wi-Fi e ThingSpeak
-const char* ssid = "Casarao_2.4GHz"; // Substitua com o nome da sua rede Wi-Fi
-const char* password = "chopp2021"; // Substitua com a senha da sua rede Wi-Fi
+const char* ssid = "WLL-Inatel"; // Substitua com o nome da sua rede Wi-Fi
+const char* password = "inatelsemfio"; // Substitua com a senha da sua rede Wi-Fi
 const char* server = "api.thingspeak.com"; // Servidor do ThingSpeak
 String apiKey = "4XRQUUDKQZUNSEXX"; // Sua chave de API do ThingSpeak
 
